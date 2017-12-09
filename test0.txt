@@ -1,0 +1,14 @@
+This is a testing file.
+BRUNO MARS
+IC NO: 901213-14-6612
+ED SHEERAN
+Passport No: A1228-4124-123A
+:20:MT103-123798798
+:32:171209MYR12345678901.32
+:70:This is to test the masking program
+1234567890 Acc No:
+Which lines is this?
+.
+/
++
+-
