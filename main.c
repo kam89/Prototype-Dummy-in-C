@@ -89,5 +89,6 @@ int main ()
         }
     }
     fclose(inp);
+    system("PAUSE");
     return 0;
 }
