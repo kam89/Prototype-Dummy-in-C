@@ -7,7 +7,7 @@ To translate a length of data to fix in a **80 x 24** windows size (Terminal) wh
 2. 3 bytes of Length of data
 3. various bytes of Data (depends on _2. Length of data_)
 
-This program is written in C language and compiled in Windows 10 (64 bit).
+This program is written in **C** language and compiled in **Windows 10 (64 bit)**.
 
 Version: 0.1.0
 Date: 2017-12-10
@@ -35,7 +35,7 @@ gcc -o formatter formatter.c
 
 ### 2. On **Linux**:
 1. Must complete the step in Installation for **Linux**.
-2. 2. Download _testing.txt_ and put at the same folder with formatter
+2. Download _testing.txt_ and put at the same folder with formatter
 3. run the formatter using command:
 ```
 ./formatter
