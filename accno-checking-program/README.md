@@ -6,10 +6,10 @@ but to skip line with **:20:** and **:32:**
 (based on **SWIFT** standard format)
 
 This program is written in **C** language and compiled in **Windows 10 (64 bit)**.
-
+```
 Version: 0.1.0
 Date: 2017-12-10
-
+```
 ## Installation (compile the source code on your own)
 ###1. On **Windows**:
 _Software required_: **Code::Blocks** [Download](http://www.codeblocks.org/downloads)
