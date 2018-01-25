@@ -1,19 +1,26 @@
-# dummy programs in C
+# dummy programs
 
 ## What is this?
-This is a collection of prototypes programs or dummy programs.
+This is a collection of **prototype/dummy** programs for further development.
 
-###### 1. accno checking program
-This program is to check the possible confidential data such as 10 digit account number in a file 
-but to skip line with :20: and :32:  
+I am working in a bank and sometimes I have to retrieve some logs/files for troubleshooting purpose.
+A data checking program is required to mask (replace) the confidential data.
 
-This sample source code is pointing to the test0.txt for testing purpose. 
+## Table of Contents:
+###### 1. Account No. checking
+To check the _possible confidential data_ such as _10 digit account number_ in a *file* 
+but to skip line with **:20:** and **:32:** (based on **SWIFT** standard format)
 
+This program is written in C language and compiled in Windows 10 (64 bit).
 
-###### 2. formatter
-This is a program to translate an input of data which consists of:
+###### 2. Formatter
+To translate a length of data to fix in a *80 x 24* windows size (Terminal) which consists of:
 1. 7 bytes of Key
 2. 3 bytes of Length of data
 3. various bytes of Data
 
-Refer to the testing.txt for the sample input
+This program is written in C language and compiled in Windows 10 (64 bit).
+
+## Disclaimer
+All the prototype/dummy programs are for personal interest only.
+Use on your own risk!
