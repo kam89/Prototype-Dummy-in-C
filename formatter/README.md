@@ -23,7 +23,9 @@ _Software required_: **Code::Blocks** [Download](http://www.codeblocks.org/downl
 _Software required_: **gcc**
 1. Download the _formatter.c_
 2. Compile using terminal command:
-  - gcc -o formatter formatter.c
+```
+gcc -o formatter formatter.c
+```
 
 ## Usage
 ### 1. On **Windows**:
@@ -35,7 +37,9 @@ _Software required_: **gcc**
 1. Must complete the step in Installation for **Linux**.
 2. 2. Download _testing.txt_ and put at the same folder with formatter
 3. run the formatter using command:
-  - ./formatter
+```
+./formatter
+```
 
 ## Disclaimer
 All the prototype/dummy programs are for personal interest only.
