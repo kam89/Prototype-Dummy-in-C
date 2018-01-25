@@ -33,7 +33,7 @@ gcc -o main main.c
 
 ### 2. On **Linux**:
 1. Must complete the step in Installation for **Linux**.
-2. 2. Download _test0.txt_ and put at the same folder with main.
+2. Download _test0.txt_ and put at the same folder with main.
 3. run the main using command:
 ```
 ./main
