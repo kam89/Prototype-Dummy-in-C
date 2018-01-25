@@ -9,7 +9,8 @@ A data checking program is required to mask (replace) the confidential data.
 ## Table of Contents:
 ###### 1. Account No. checking
 To check the _possible confidential data_ such as _10 digit account number_ in a *file* 
-but to skip line with **:20:** and **:32:** (based on **SWIFT** standard format)
+but to skip line with **:20:** and **:32:**
+(based on **SWIFT** standard format)
 
 This program is written in C language and compiled in Windows 10 (64 bit).
 
