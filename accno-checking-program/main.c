@@ -1,8 +1,11 @@
 #include <stdio.h>
-
-/*  Note:
-This program is to check the possible confidential data such as 10 digit account number in a file but
-skip line with :20: and :32:  */
+ 
+/*	Version: 0.1.0 */
+/*	Date: 2017-12-10 */
+/*	Function:
+To check the possible confidential data such as 10 digit account number in a file but to skip line with :20: and :32: 
+(based on SWIFT standard format)  
+*/
 
 int main ()
 {
