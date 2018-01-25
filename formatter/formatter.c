@@ -1,9 +1,14 @@
-/*  This is a program to translate an input of data which consists of:
+/* Version: 0.1.0 */
+/* Date: 2017-12-15 */
+
+/*  
+Function:
+This is a program to translate an input of data which consists of:
     1. 7 bytes of Key
     2. 3 bytes of Length of data
     3. various bytes of Data
 
-    Refer to the testing.txt for the sample input
+Refer to the testing.txt for the sample input
 */
 
 #include <stdlib.h>
