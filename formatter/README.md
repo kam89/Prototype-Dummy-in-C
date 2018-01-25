@@ -15,25 +15,25 @@ Date: 2017-12-10
 ## Installation (compile the source code on your own)
 ### 1. On **Windows**:
 _Software required_: **Code::Blocks** [Download](http://www.codeblocks.org/downloads)
-1. Download and Install the Code::Blocks.
-2. Download the formatter.c and open in Code::Blocks
+1. Download and Install the **Code::Blocks**.
+2. Download the _formatter.c_ and open in **Code::Blocks**
 3. Compile and build it.
 
 ### 2. On **Linux**: (not tested by me)
 _Software required_: **gcc**
-1. Download the formatter.c
+1. Download the _formatter.c_
 2. Compile using terminal command:
   - gcc -o formatter formatter.c
 
 ## Usage
 ### 1. On **Windows**:
-1. Download formatter.exe (only if you want to try the prototype/dummy program)
-2. Download testing.txt and put at the same folder with formatter.exe
-3. Double click the formatter.exe
+1. Download _formatter.exe_ (only if you want to try the prototype/dummy program)
+2. Download _testing.txt_ and put at the same folder with _formatter.exe_
+3. Double click the _formatter.exe_
 
 ### 2. On **Linux**:
-1. Must complete the step in Installation for Linux.
-2. 2. Download testing.txt and put at the same folder with formatter
+1. Must complete the step in Installation for **Linux**.
+2. 2. Download _testing.txt_ and put at the same folder with formatter
 3. run the formatter using command:
   - ./formatter
 
