@@ -14,6 +14,8 @@ Therefore I have created some tool.
 
 ### 2. [Formatter](formatter)
 
+### 3. [Web Functions](htdocs)
+
 ## Disclaimer
 All the prototype/dummy programs are for personal interest only.
 Use at your own risk!
