@@ -11,7 +11,7 @@ _Software required_: **XAMPP for Windows** [Download](https://www.apachefriends.
 
 ## Content
 ### 1. [php](php):
-### 1.1 [security](/php/security)
+### 1.1 [security](php/security)
 
 ## Disclaimer
 All the prototype/dummy programs are for personal interest only.
