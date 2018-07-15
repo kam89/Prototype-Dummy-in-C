@@ -26,8 +26,15 @@ class requestMethod {
     }
     
     function get() {
-        return $_GET[$this->input];
+        $validate = new dataSecValidation($_GET[$this->input]);
+        return $_GET[$this->input] = $validate->Validate();
     }
+    
+    function request() {
+        $validate = new dataSecValidation($_REQUEST[$this->input]);
+        return $_REQUEST[$this->input] = $validate->Validate();
+    }
+    
     
 }
 ?>
