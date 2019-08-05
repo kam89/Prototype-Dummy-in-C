@@ -1,0 +1,118 @@
+Sub Macro1()
+    Dim thisDate As Date
+    Dim i, j, k, l As Integer
+    Dim counter1 As Integer
+    
+    Dim thisYY, thisMM, thisDD1, thisDD2 As Integer
+    Dim StartDate, EndDate As Date
+    Dim tmpDate1, tmpDate2 As String
+    Dim thisMM1, pos1, pos2, tmpA As Integer
+    Dim StartDate1, EndDate1 As Date
+    'Dim ValueB As Integer
+    
+    thisYY = 2019
+    counter1 = 0
+    
+    For l = 1 To 48
+        For k = 1 To 12
+            thisMM = k
+        For j = 1 To 4
+            Select Case j
+                Case 1:
+                    thisDD1 = 1
+                    thisDD2 = 7
+                Case 2:
+                    thisDD1 = 8
+                    thisDD2 = 15
+                Case 3:
+                    thisDD1 = 16
+                    thisDD2 = 23
+                Case 4:
+                    thisDD1 = 24
+                    Select Case thisMM
+                        Case 1, 3, 5, 7, 8, 10, 12:
+                            thisDD2 = 31
+                        Case 2:
+                            thisDD2 = 28
+                        Case 4, 6, 9, 11:
+                            thisDD2 = 30
+                    End Select
+            End Select
+            tmpDate1 = thisDD1 & "/" & thisMM & "/" & thisYY
+            'StartDate = FormatDateTime(tmpDate1, vbShortDate)
+            'StartDate = tmpDate1
+                    
+            tmpDate2 = thisDD2 & "/" & thisMM & "/" & thisYY
+            'EndDate = FormatDateTime(tmpDate2, vbShortDate)
+            'EndDate = tmpDate2
+            Application.ActiveSheet.Range("F" & l).Value = DateValue(FormatDateTime(tmpDate1, vbShortDate))
+            Application.ActiveSheet.Range("G" & l).Value = DateValue(FormatDateTime(tmpDate2, vbShortDate))
+            l = l + 1
+        Next j
+        Next k
+    Next l
+    
+    For i = 2 To 10
+        thisDate = Application.ActiveSheet.Range("A" & i)
+        'ValueB = Application.ActiveSheet.Range("C" & i)
+        thisMM1 = Month(thisDate)
+        Select Case thisMM1
+            Case 1:
+                pos1 = 1
+                pos2 = 4
+            Case 2:
+                pos1 = 5
+                pos2 = 8
+            Case 3:
+                pos1 = 9
+                pos2 = 12
+            Case 4:
+                pos1 = 13
+                pos2 = 16
+            Case 5:
+                pos1 = 17
+                pos2 = 20
+            Case 6:
+                pos1 = 21
+                pos2 = 24
+            Case 7:
+                pos1 = 25
+                pos2 = 28
+            Case 8:
+                pos1 = 29
+                pos2 = 32
+            Case 9:
+                pos1 = 33
+                pos2 = 36
+            Case 10:
+                pos1 = 37
+                pos2 = 40
+            Case 11:
+                pos1 = 41
+                pos2 = 44
+            Case 12:
+                pos1 = 45
+                pos2 = 48
+        End Select
+        For tmpA = pos1 To pos2
+            StartDate1 = Application.ActiveSheet.Range("F" & tmpA)
+            EndDate1 = Application.ActiveSheet.Range("G" & tmpA)
+            'Application.ActiveSheet.Range("I" & tmpA).Value = StartDate1
+            'Application.ActiveSheet.Range("j" & tmpA).Value = EndDate1
+            If thisDate >= StartDate1 & thisDate <= EndDate1 Then
+                'If IsNull(Application.ActiveSheet.Range("C" & i)) Or IsEmpty(Application.ActiveSheet.Range("C" & i)) Then
+                If IsEmpty(Application.ActiveSheet.Range("C" & i)) Then
+                    counter1 = counter1 + 1
+                    Application.ActiveSheet.Range("H" & tmpA).Value = counter1
+                    tmpA = pos2
+                Else
+                    counter1 = 0
+                End If
+            End If
+            'Application.ActiveSheet.Range("H" & tmpA).Value = counter1
+        Next tmpA
+        'Application.ActiveSheet.Range("H" & tmpA - 1).Value = counter1
+    Next i
+    
+End Sub
+
